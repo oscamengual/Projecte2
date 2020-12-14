@@ -9,7 +9,7 @@ class UserDao{
     } 
 
     public function loginUser($user){
-        $query = "SELECT * FROM tbl_usuarios WHERE email_user='{$user->getEmail_user()}' AND passwd_user='{$user->getPasswd_user()}'";
+        $query = "SELECT * FROM tbl_user WHERE email_user='{$user->getEmail_user()}' AND passwd_user='{$user->getPasswd_user()}'";
         $sentencia=$this->pdo->prepare($query);
         $sentencia->execute();
 

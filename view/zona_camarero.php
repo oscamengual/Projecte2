@@ -10,7 +10,6 @@
         <div class='img' src="../img/header.jpg"></div>
         
         <?php
-            require_once '../controller/sessionController.php';
             require_once '../model/mesaDAO.php';
             require_once '../controller/sessionController.php';
             $mesaDAO=new MesaDao(); 

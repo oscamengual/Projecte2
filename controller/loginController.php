@@ -1,18 +1,18 @@
 <?php 
 include '../model/user.php';
 include '../model/userDAO.php';
-require_once "../services/conexion.php";
+require_once "../model/connexion.php";
 
     $email    = $_POST['email'];
-    $password = md5($_POST['psswd']);
+    $password = md5($_POST['passwd']);
 
     // Comprobar si existe un usuario con ese email o contraseña
     $result = "Select * from tbl_user
-        where email_user='$email' and passwd_user='$password'";
+        where email_user='$email' and pswd_user='$password'";
     $sentencia = $pdo->prepare($result);
     $sentencia->execute();
     if($sentencia->rowCount()!=0){ //Se ejecuta el if si existe el usuario
-        $query= "SELECT estatus from tbl_user where email_user='$email' and passwd_user='$password'";
+        $query= "SELECT estatus from tbl_user where email_user='$email' and pswd_user='$password'";
         $sentencia= $pdo->prepare($query);
         $sentencia->execute();
 
@@ -22,7 +22,7 @@ require_once "../services/conexion.php";
 
             switch ($estatus[0]) {
                 case '1':
-                    header("Location: ../view/zona_camarero.php?");
+                    header("Location: ../view/zona_camarero.php");
                     break;
                 case '2':
                     header("Location: ../view/zona_admin.php");
