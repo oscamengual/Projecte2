@@ -18,8 +18,6 @@
   
     <input type="submit" id="error" value="Submit">
   </form>
-  <button><a href="login_mantenimiento.php">Mantenimento</a></button>
-  <div id="mensaje"></div>
 </div>
 </body>
 </html>
