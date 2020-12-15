@@ -19,6 +19,7 @@
                 $result->execute();
 
                                 echo '<table>';
+                                echo '<td style="text-align:center" class="btn"><form action="../controller/crearUser.php?id='.'" method="POST"> <input type="submit" class="actu" value="Crear"></form></td>';
                                 echo '<tr>';
                                 echo '<th style="text-align:center">ID</th>';
                                 echo '<th style="text-align:center">Email</th>';
@@ -26,8 +27,8 @@
                                 echo '<th style="text-align:center">Acciones</th>';
                                echo '</tr>';
 
-                if ($result) {
-                    while ($fila=$result->fetch()) {
+                               if ($result) {
+                                while ($fila=$result->fetch()) {
                         echo '<tr>';
                                     echo '<td style="text-align:center">'.$fila['id_user'].'</td>';
                                     echo '<td style="text-align:center">'.$fila['email_user'].'</td>';
