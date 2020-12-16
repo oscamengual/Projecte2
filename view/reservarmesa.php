@@ -3,31 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reservar Mesas</title>
 </head>
 <body>
 
 <form method="post" action="../controller/reservarController.php" onSubmit="return validateForm();">
         <div style="max-width: 400px;"></div>
         <div>Reservar Mesa</div>
-        <div>Mesa<span style="color: red;"> *</span><br/>
-            <input type="text" id="id_mesa" name="id_mesa" style="max-width : 400px;" class="form-control"/>
-        </div>
-        <div>Fecha<br/>
-        <input type="date" id="start" name="fdata"value="dd/mm/aaaa"min="2020-11-11" max="2021-06-31">        
-        </div>
-        <div>Hora Reserva<span style="color: red;"> *</span><br/>
-            <select id="franjas_horarias" name="franjas_horarias" style="max-width : 250px;" class="form-control">
-                <option value="15:00-16:00">15:00-16:00</option>
-                <option value="16:00-17:00">16:00-17:00</option>
-                <option value="17:00-18:00">17:00-18:00</option>
-                <option value="18:00-19:00">18:00-19:00</option>
-                <option value="19:00-20:00">19:00-20:00</option>
-                <option value="20:00-21:00">20:00-21:00</option>
-                <option value="22:00-23:00">22:00-23:00</option>
-            </select>
-        </div>
-        <div>Numero de comensales<span style="color: red;"> *</span><br/>
         <select id="id_mesa" name="id_mesa" style="max-width : 250px;" class="form-control">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -35,11 +17,44 @@
             <option value="4">4</option>
             <option value="5">5</option>
             <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
         </select>
+        <div>Fecha<br/>
+        <input type="date" id="start" name="fdata"value="dd/mm/aaaa"min="2020-11-11" max="2021-06-31">        
         </div>
+        <div>Hora Reserva<span style="color: red;"> *</span><br/>
+            <select id="franjas_horarias" name="franjas_horarias" style="max-width : 250px;" class="form-control">
+                <option value="15-16">15:00-16:00</option>
+                <option value="16-17">16:00-17:00</option>
+                <option value="17-18">17:00-18:00</option>
+                <option value="18-19">18:00-19:00</option>
+                <option value="19-20">19:00-20:00</option>
+                <option value="20-21">20:00-21:00</option>
+                <option value="22-23">22:00-23:00</option>
+            </select>
+        </div>
+        <!-- <div>Numero de comensales<span style="color: red;"> *</span><br/>
+        <select id="id_mesa" name="id_mesa" style="max-width : 250px;" class="form-control">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select> -->
+        <!-- </div> -->
         <div><input name="skip_Submit" value="Submit" type="submit"/></div>
-        <div>
-        </div>
     </form>
+    <button onclick="location.href='../view/zona_Admin.php'">Volver</button>
 </body>
 </html>

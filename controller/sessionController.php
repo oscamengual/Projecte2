@@ -10,4 +10,8 @@ echo '<div class="logo">';
         echo '<h2>Bienvenido: '.$_SESSION['user'];
         echo '<h3 class="logout"><a href="../controller/logoutController.php">Logout</a></h3>';
         echo '</div>';
+
+
+
+        
 ?>

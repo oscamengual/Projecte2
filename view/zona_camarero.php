@@ -8,16 +8,18 @@
     </head>
     <body>
         <div class='img' src="../img/header.jpg"></div>
-        
+
         <?php
             require_once '../model/mesaDAO.php';
             require_once '../controller/sessionController.php';
             $mesaDAO=new MesaDao(); 
-            
+
 
             if (isset($_POST['Disponibilidad'])){
                 $mesaDAO->update();
             }
+            echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="reservar"></form></td>';
+
 
             if (isset($_POST['num_com']) || isset($_POST['disponibilidad']) || isset($_POST['ubicacion'])) {
                 // $num_comensales=$_POST['num_com'];

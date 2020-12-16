@@ -12,15 +12,25 @@ require_once "../model/connexion.php";
     $sentencia = $pdo->prepare($result);
     $sentencia->execute();
     if($sentencia->rowCount()!=0){ //Se ejecuta el if si existe el usuario
-        $query= "SELECT estatus from tbl_user where email_user='$email' and pswd_user='$password'";
+        $query= "SELECT * from tbl_user where email_user='$email' and pswd_user='$password'";
         $sentencia= $pdo->prepare($query);
         $sentencia->execute();
 
-            $estatus= $sentencia->fetch();
-            session_start();
-            $_SESSION["user"] = $email;
+        $user= $sentencia->fetch();
+        $id=$user['id_user'];
+        $estatus=$user['estatus'];
+        $email=$user['email_user'];
+        session_start();
 
-            switch ($estatus[0]) {
+        $_SESSION["email_user"] = $email;
+        $_SESSION["user"] = $id;
+
+        
+            // $estatus= $sentencia->fetch();
+            // session_start();
+            // $_SESSION["user"] = $email;
+
+            switch ($estatus) {
                 case '1':
                     header("Location: ../view/zona_camarero.php");
                     break;

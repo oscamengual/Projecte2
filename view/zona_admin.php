@@ -21,6 +21,8 @@
                                 echo '<table>';
                                 echo '<td style="text-align:center" class="btn"><form action="../controller/crearUser.php?id='.'" method="POST"> <input type="submit" class="actu" value="Crear"></form></td>';
                                 echo '<tr>';
+                                echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="reservar"></form></td>';
+
                                 echo '<th style="text-align:center">ID</th>';
                                 echo '<th style="text-align:center">Email</th>';
                                 echo '<th style="text-align:center">Estatus: 1-Admin  2-Camarero</th>';
@@ -40,7 +42,8 @@
                             }
                             echo '</table>';
         ?>
-        <img src="../img/admin.jpg">
 
+        <img src="../img/admin.jpg">
+        
     </body>
 </html>
