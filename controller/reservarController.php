@@ -26,15 +26,15 @@
     if($sentencia->rowCount()!=0){
         header("Location: .._/view/reservamesa.php");
     }else{
-        $query="INSERT INTO tbl_reserva (id_mesa, franjas_horarias, id_user) VALUES ('$mesa', '$horario', '$id_user')";
+        $query="INSERT INTO tbl_reserva (id_mesa, franjas_horarias, Fecha_reserva, id_user) VALUES ('$mesa', '$horario', '$fecha', '$id_user')";
 
-        // $sentencia= $pdo->prepare($query);
-        // $sentencia->bindParam(1,$fecha);
-        // $sentencia->bindParam(2,$mesa);
-        // $sentencia->bindParam(3,$user);
-        // $sentencia->bindParam(3,$horario);
+        $sentencia= $pdo->prepare($query);
+        $sentencia->bindParam(1,$fecha);
+        $sentencia->bindParam(2,$mesa);
+        $sentencia->bindParam(3,$id_user);
+        $sentencia->bindParam(4,$horario);
 
-        // $sentencia->execute();
+        $sentencia->execute();
         header("Location: ../view/reservarmesa.php");
 
     }
