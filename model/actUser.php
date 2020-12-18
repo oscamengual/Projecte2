@@ -1,6 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="../css/demas.css"/>
+    <title>Actualizar Usuario</title>
+</head>
+<body>
+    
+<div class='img' src="../img/header.jpg"></div>
+
 <?php
+
 require_once '../model/connexion.php';
-echo '<link rel="stylesheet" type="text/css" href="../css/style.css">';
+
 
     $id=$_REQUEST['id'];
     $query="SELECT * FROM tbl_user WHERE id_user = $id";
@@ -15,7 +28,7 @@ if($row =$result->fetch()){
 
 echo "<div class='contenedor'>";
 echo "<form action='../controller/actualizarController.php' method='POST'>";
-
+    
 echo "<label for='fname'>Email</label>";
 echo "<input type='text' name='email_user' class='email_user' value='{$row["email_user"]}'>";
 
@@ -28,3 +41,8 @@ echo "<input type='submit' class='fenviar' value='Enviar'>";
 echo "</form>";
 echo "</div>";
 }
+?>
+    <button class="fenviar" onclick="location.href='../view/zona_Admin.php'">Volver</button>
+
+</body>
+</html>

@@ -16,7 +16,7 @@
     <label for="passwd">Contraseña</label>
     <input type="password" id="passwd" name="passwd" placeholder="Contraseña...">
   
-    <input type="submit" id="error" value="Submit">
+    <input type="submit" id="error" value="Entrar">
   </form>
 </div>
 </body>

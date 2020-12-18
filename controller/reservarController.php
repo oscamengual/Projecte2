@@ -38,6 +38,35 @@
         header("Location: ../view/reservarmesa.php");
 
     }
+    
     echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="Volver"></form></td>';
 
+    // public function cancelar_reserva(){
+    //     $query = "SELECT * FROM tbl_reserva ";
+    //     $sentencia=$this->pdo->prepare($query);
+    //     $sentencia->execute();
+    //     $lista_reservas=$sentencia->fetchAll(PDO::FETCH_ASSOC);
+
+    //     echo "<table class='table text-center'>";
+    //     echo '<thead class="thread-dark">';
+    //     echo "<tr>";
+    //     echo "<th>Día de la reserva</th>";
+    //     echo "<th>Mesa/th>";
+    //     echo "<th>Hora</th>";
+    //     echo "<th>Camarero que ha tomado la reserva</th>";
+    //     echo "<th></th>";
+    //     echo "</tr>";
+    //     echo '<thead>';
+    //     foreach($lista_reservas as $reserva){
+    //     echo "<tr>";
+    //     echo "<td>".$reserva['Fecha_reserva']."</td>";
+    //     echo "<td>".$reserva['id_mesa']."</td>";
+    //     echo "<td>".$reserva['franjas_horarias']."</td>";
+    //     echo "<td>".$reserva['id_user']."</td>";
+    //     echo '<td><form action="../model/reserva.php?id_reserva='.$reserva['id_reserva'].'" method="POST"> <input type="submit" class="actu" value="Cancelar"></form>';
+    //     echo "<tr>"; 
+    //     }
+    //     echo "</table>";
+
+    
 ?>

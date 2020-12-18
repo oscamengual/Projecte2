@@ -25,7 +25,6 @@ require_once "../model/connexion.php";
         $_SESSION["email_user"] = $email;
         $_SESSION["user"] = $id;
 
-        
             // $estatus= $sentencia->fetch();
             // session_start();
             // $_SESSION["user"] = $email;
@@ -41,20 +40,6 @@ require_once "../model/connexion.php";
         } else { //Esto se ejecuta si el usuario no existe
             header("Location: ../index.php");
       }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // $user = new User($_POST['email'], md5($_POST['psswd']));
 // $userDAO = new UserDAO();

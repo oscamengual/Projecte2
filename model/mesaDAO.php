@@ -33,10 +33,12 @@ class MesaDAO{
             echo "<option value='Mantenimiento'>Mantenimiento</option> ";
             echo "</select>";
             echo "<input  type='submit' value='Submit'>";
-            echo "</form>";           
+            echo "</form>";    
             echo "</div>";
+            
             }
             ?>
+            
             <script>
                 var Mesa=document.getElementsByClassName('item');
                 var Disponibilidad=document.getElementsByClassName('Disponibilidad');
@@ -54,7 +56,7 @@ class MesaDAO{
             </script>
             <?php
             echo "<footer>";
-            echo "<p>Copyright &copy; 2020 | Designed By : Manel Portillo, Albert Buendia, Eloi Rodriguez, Óscar Mengual, All rights reserved. </p>";
+            echo "<p>Copyright &copy; 2020 | Designed By :  Óscar Mengual, All rights reserved. </p>";
             echo "</footer>";    
     }
 
@@ -190,7 +192,7 @@ class MesaDAO{
             </script>
             <?php
             echo "<footer>";
-            echo "<p>Copyright &copy; 2020 | Designed By : Manel Portillo, Albert Buendia, Eloi Rodriguez, Óscar Mengual, All rights reserved. </p>";
+            echo "<p>Copyright &copy; 2020 | Designed By : Óscar Mengual, All rights reserved. </p>";
             echo "</footer>";
             
     }
@@ -292,7 +294,7 @@ class MesaDAO{
             </script>
             <?php
             echo "<footer>";
-            echo "<p>Copyright &copy; 2020 | Designed By : Manel Portillo, Albert Buendia, Eloi Rodriguez, Óscar Mengual, All rights reserved. </p>";
+            echo "<p>Copyright &copy; 2020 | Designed By : Óscar Mengual, All rights reserved. </p>";
             echo "</footer>";    
     }
     public function liberar_mesas(){
