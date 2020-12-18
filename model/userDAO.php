@@ -4,7 +4,7 @@ class UserDao{
 
     public function __construct(){
         //include '../services/config.php';
-        include '../services/conexion.php';
+        include '../model/connexion.php';
         $this->pdo=$pdo;
     } 
 

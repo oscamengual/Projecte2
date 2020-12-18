@@ -5,6 +5,8 @@ body{
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+    background-color: #191919;
+    color: white;
     
     
 }
@@ -14,7 +16,7 @@ body{
     background-size: contain;
     background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 170px;
     margin-left: 0%;
     margin-top: 25px;
     margin-bottom: 0%;
@@ -71,11 +73,15 @@ h1 {
 }
 
 footer{
+
+    left: 0;
+    bottom: 0;
     justify-content: center;
     background-color: black;
     color: white;
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 .logo{
@@ -100,7 +106,7 @@ footer{
 
 .logout{
     width: 8%;
-    background-color: blue;
+    background-color: #202020;
     color: white;
     padding: 14px 20px;
     margin: 10px 0 0 0;
@@ -115,4 +121,89 @@ footer{
     text-decoration:none;
     color:white;    
 }
+
+.logout:hover {
+    background-color: black;
+  }
+/* .inp{
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.label{
+position: absolute;
+top: 20px;
+left: 12px;
+font-size: 16px;
+color: rgba($dark,.5);
+font-weight: 500;
+transform-origin: 0 0;
+transform: translate3d(0,0,0);
+transition: all .2s ease;
+pointer-events: none;
+}
+
+input{
+-webkit-appearance: none;
+appearance: none;
+width: 100%;
+border: 0;
+font-family: inherit;
+padding: 16px 12px 0 12px;
+height: 56px;
+font-size: 16px;
+font-weight: 400;
+background: rgba($dark,.02);
+box-shadow: inset 0 -1px 0 rgba($dark,.3);
+color: $dark;
+transition: all .15s ease;
+}
+
+&:hover{
+  background: rgba($dark,.04);
+  box-shadow: inset 0 -1px 0 rgba($dark,.5);
+}
+
+&:not(:placeholder-shown){
+  + .label;
+    color: rgba($dark,.5);
+    transform: translate3d(0,-12px,0) scale(.75);
+}
+
+&:focus{
+  background: rgba($dark,.05);
+  outline: none;
+  box-shadow: inset 0 -2px 0 $primary;
+  + .label;
+    color: $primary;
+    transform: translate3d(0,-12px,0) scale(.75);
+    + .focus-bg;
+      transform: scaleX(1);
+      transition: all .1s ease;
+} */
+
+/* .fenviar {
+    background-color: black; 
+    border: none;
+    margin:auto;
+    width: 100%;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    /* transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+.fenviar:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  } */ 
 

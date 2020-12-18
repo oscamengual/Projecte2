@@ -1,5 +1,5 @@
 <?php
-define("BD","db_proyecto1");
+define("BD","2021_mengualoscar");
 define("SERVER", "localhost");
 define("USER", "root");
 define("PASSWORD", "");

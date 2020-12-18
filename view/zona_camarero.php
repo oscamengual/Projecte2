@@ -18,13 +18,13 @@
             if (isset($_POST['Disponibilidad'])){
                 $mesaDAO->update();
             }
-            echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="reservar"></form></td>';
 
 
             if (isset($_POST['num_com']) || isset($_POST['disponibilidad']) || isset($_POST['ubicacion'])) {
                 // $num_comensales=$_POST['num_com'];
                 // $disponibilidad=$_POST['disponibilidad'];
                 // $ubicavion=$_POST['ubicacion'];
+                
                 echo "<div class='ns'>";
               
                 echo "<form action='../view/zona_camarero.php' method='POST'>";
@@ -56,7 +56,11 @@
 
                 echo "<input type='submit' value='Submit'>";
 
+
+
                 echo "</form>";
+                echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="Reservar"></form></td>';
+
                 echo "</div>";
 
                 $mesaDAO->filtrarMesas();
@@ -93,7 +97,10 @@
 
                 echo "<input type='submit' value='Submit'>";
 
+
                 echo "</form>";
+                echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="Reservar"></form></td>';
+
                 echo "</div>";
 
                 
