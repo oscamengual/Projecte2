@@ -10,8 +10,8 @@
         <div class='img' src="../img/header.jpg"></div>
         
         <?php
+            // echo '<h3 class="logout"><a href="../view/zona_camarero.php">Home</a></h3>';
             require_once '../controller/sessionController.php';
-            
             require_once '../model/connexion.php';
             echo "<div class='actualizar'>";
 
@@ -21,11 +21,12 @@
                 $result->setFetchMode(PDO::FETCH_ASSOC);
                 $result->execute();
 
+                                echo '<div align="center"><font size=6 >Administrar Usuarios</font></div>';
+                                echo '<br>';
                                 echo '<table>';
                                 echo '<td style="text-align:center" class="btn"><form action="../controller/crearUser.php?id='.'" method="POST"> <input type="submit" class="actu" value="Crear"></form></td>';
+                                // echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="Reservar"></form></td>';
                                 echo '<tr>';
-                                echo '<td style="text-align:center" class="btn"><form action="../view/reservarmesa.php"id='.'" method="POST"> <input type="submit" class="actu" value="Reservar"></form></td>';
-
                                 echo '<th style="text-align:center">ID</th>';
                                 echo '<th style="text-align:center">Email</th>';
                                 echo '<th style="text-align:center">Estatus</th>';
@@ -47,11 +48,14 @@
 
                             echo '</table>';
                             echo '</div>';
+
                             echo "<footer>";
                             echo "<p>Copyright &copy; 2020 | Designed By : Óscar Mengual, All rights reserved. </p>";
-                            echo "</footer>";  
+                            echo "</footer>"; 
+                            
         ?>
-        
+               <button class="fenviar" onclick="location.href='../view/zona_camarero.php'">Home</button>
+
         <!-- <img src="../img/admin.jpg"> -->
         
     </body>

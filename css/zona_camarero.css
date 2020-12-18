@@ -106,7 +106,7 @@ footer{
 
 .logout{
     width: 8%;
-    background-color: blue;
+    background-color: #202020;
     color: white;
     padding: 14px 20px;
     margin: 10px 0 0 0;
@@ -122,6 +122,9 @@ footer{
     color:white;    
 }
 
+.logout:hover {
+    background-color: black;
+  }
 /* .inp{
   position: relative;
   margin: auto;

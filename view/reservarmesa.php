@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservar Mesas</title>
     <link  rel="stylesheet" href="../css/demas.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js%22%3E"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/js2.js"></script>
 </head>
 <body>
 
 <div class='img' src="../img/header.jpg"></div>
-<form method="post" action="../controller/reservarController.php" onSubmit="return validateForm();">
+<form method="post" action="../controller/reservarController.php" onsubmit="return validateForm();">
 <div class='reservar'>
+        <h1 align="center">Reservas de Mesa</h1>
         <div style="max-width: 400px;"></div>
         <div>Reservar Mesa</div>
         <select id="id_mesa" name="id_mesa" style="max-width : 250px;" class="form-control">
@@ -35,7 +36,7 @@
             <option value="17">17</option>
         </select>
         <div>Fecha<br/>
-        <input type='date' id='fdata' name='fdata' class='calendario' onclick='return fecha()'><br>
+        <input type='date' id='fdata' name='fdata' class='calendario'  onclick='return fecha()'><br>
         </div>
         <div>Hora Reserva<span style="color: red;"></span><br/>
             <select id="franjas_horarias" name="franjas_horarias" style="max-width : 250px;" class="form-control">
@@ -62,8 +63,9 @@
 
         <!-- <div><input name="skip_Submit" value="Volver" type="submit" onclick="location.href='zona_Admin.php'"/></div> -->
     </form>
+    <div id="mensaje"></div>
 </div>
-    <button onclick="location.href='../view/zona_Admin.php'">Volver</button>
+    <button onclick="location.href='../view/zona_camarero.php'">Volver</button>
     <?php
             echo "<footer>";
             echo "<p>Copyright &copy; 2020 | Designed By : Óscar Mengual, All rights reserved. </p>";

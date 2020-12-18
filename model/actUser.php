@@ -37,9 +37,12 @@ echo "<input type='text' name='estatus' class='estatus' value='{$row["estatus"]}
 
 echo "<input type='hidden' name='id' value='{$id}'>";
 
-echo "<input type='submit' class='fenviar' value='Enviar'>";
+echo "<input type='submit' class='fenviar' value='Actualizar'>";
 echo "</form>";
 echo "</div>";
+echo "<footer>";
+echo "<p>Copyright &copy; 2020 | Designed By : Óscar Mengual, All rights reserved. </p>";
+echo "</footer>";  
 }
 ?>
     <button class="fenviar" onclick="location.href='../view/zona_Admin.php'">Volver</button>

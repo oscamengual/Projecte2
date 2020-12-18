@@ -13,3 +13,23 @@ function fecha() {
     //alert(maxDate);
     $('#fdata').attr('min', maxDate);
 }
+
+function validateForm() {
+    var dia=document.getElementById('fdata').value;
+
+
+    // alert(dia);
+    // alert(password);
+        if (dia == "") {
+            //alert ("No se ha especificado ningun dia");
+
+            document.getElementById('mensaje').innerHTML="<p>No se ha especificado ningun dia</p>";
+            document.getElementById('mensaje').style.color = "red";
+            document.getElementById('fdata').style.border = "2px solid red";
+        
+        }else{
+            return true;
+        }
+            return false;
+    
+    }    
